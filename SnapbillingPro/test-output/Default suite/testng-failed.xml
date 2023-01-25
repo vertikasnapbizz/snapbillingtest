@@ -5,8 +5,12 @@
     <classes>
       <class name="test.Registration">
         <methods>
+          <include name="Launchapp"/>
+          <include name="syncbills"/>
           <include name="Registerstore"/>
           <include name="Login"/>
+          <include name="addsearchedproduct"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- test.Registration -->
     </classes>

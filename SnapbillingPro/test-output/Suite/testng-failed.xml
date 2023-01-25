@@ -5,8 +5,11 @@
     <classes>
       <class name="test.Registration">
         <methods>
+          <include name="Otherbill"/>
+          <include name="Makebills"/>
           <include name="Registerstore"/>
           <include name="Login"/>
+          <include name="logout"/>
         </methods>
       </class> <!-- test.Registration -->
     </classes>

@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-    <class name="launchsnapbillingpro"/>
-  <class name="test.Registration" />
+  <class name="SnapbillingLogin"/>
+  <class name="test.Registration"/>
   <class name="test.MethodClass"/>
   
   </classes>

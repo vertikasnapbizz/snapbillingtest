@@ -1,7 +1,11 @@
 package test;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Locatable;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -20,7 +24,7 @@ public class MethodClass {
 		System.out.println("main method");
 	}
 	
-		public static void findElementById(String string, String string2) {
+		public static void findElementById(String string) {
 			MobileElement el = (MobileElement) driver.findElementById(string);
 			System.out.println("el" +el);
 			  Point point = el.getLocation();
@@ -54,16 +58,36 @@ public static void findElementByXpathAndClick(String string) {
 	driver.findElementByXPath(string).click();
 }
 
-public void findElementByIdandtext(String string, String string2) {
-	MobileElement ele = (MobileElement) driver.findElementById(string2);
-	System.out.println("ele" +ele);
-	  Point point = ele.getLocation();
-	  int x = point.x +5; 
-	  int y = point.y + ele.getSize().getHeight() - 6;
-	  PointOption p = new PointOption();
-	  new TouchAction(driver).tap(p.point(x, y)).perform();
-	  }
 
-
-
+public void wait(int timeoutMillis, TimeUnit timeUnit) {
+	driver.manage().timeouts().implicitlyWait(timeoutMillis, timeUnit);	
 }
+
+
+public void allowAndClick(String string) {
+	driver.findElement(By.id(string)).click();	
+}
+
+public static void findElementByXpathAndSendKeys(String string, String string2) {
+	driver.findElementByXPath(string).sendKeys(string2);
+}
+
+
+public void findElementsByXPath(String string) {
+	driver.findElementByXPath(string);
+	// TODO Auto-generated method stub
+	
+}
+
+//public void selectByvisibletext(String string) {
+//	driver.
+//}
+
+public void findElementsById(String string) {
+	driver.findElementsById(string);
+	// TODO Auto-generated method stub
+	
+}
+}
+
+
