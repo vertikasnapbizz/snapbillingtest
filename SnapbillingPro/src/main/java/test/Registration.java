@@ -36,9 +36,10 @@ public class Registration
 	
 public Registration()  {
 	
+	
 	}
 
-@BeforeTest
+@Test(priority = 1)
 public void Launchapp() throws Exception
 {
 	DesiredCapabilities cap = new DesiredCapabilities();
@@ -62,7 +63,7 @@ public void Launchapp() throws Exception
 
 }
 
-	@Test
+	@Test(priority = 2)
 	public void Registerstore() {
 	
 
@@ -74,10 +75,13 @@ public void Launchapp() throws Exception
     m.findElementById("agreement_textvw" );
     m.findElementByIdAndClick("btn_agree");
     m.findElementByIdAndClick("btn_accept");
- System.out.println("store registered");
+    System.out.println("store registered");
+    m.wait(30,TimeUnit.SECONDS);
 	}
 	
- @Test
+	
+	
+ @Test(priority = 3)
  public void Login() 
  {
 	m.findElementByIdAndSendKeys("etUserName_login", "admin");
@@ -94,7 +98,7 @@ public void Launchapp() throws Exception
  }
  
 
-	@Test
+	@Test(priority = 4)
 	public void Makebills()
 	{
 	
@@ -113,17 +117,6 @@ public void Launchapp() throws Exception
 	    m.findElementByIdAndClick("button4");
 		 m.findElementByIdAndClick("button8");
 	  	  m.findElementByIdAndClick("buttonenter");
-	  //	m.findElementById("search_button");  
-	  //	m.findElementByIdAndSendKeys("product_name_search_edittext","apple");
-	//  	List<WebElement> element2 = (List<WebElement>) driver.findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]");
-//			for (WebElement Element2 : element2)
-//				 System.out.println( Element2.getText());
-		//	System.out.println(element2.size());
-		//	Random rnd = new Random();
-		//	int rndInt = rnd.nextInt(element2.size());
-		//	((org.openqa.selenium.WebElement) element2.get(rndInt)).click();
-	 
-		//	System.out.println("element2");
 		 m.findElementByIdAndClick("view_details_layout");
 	     m.findElementByIdAndClick("invoice_bill_button");
 	      m.findElementByIdAndClick("payment_bill_imageview");
@@ -132,34 +125,50 @@ public void Launchapp() throws Exception
 	      m.findElementByIdAndClick("android:id/button1");
 	      System.out.println("Make bills test case passed");
 	}
-	@Test
-	public void addsearchedproduct()
-	{
-		m.findElementByIdAndSendKeys("customer_search_edittext","verti");
-		m.findElementByIdAndClick("search_customername_textview");
-		m.findElementById("search_button");
-		m.findElementByIdAndSendKeys("barcode_product_name_search_edittext","12");
-		m.findElementByIdAndClick("barcode_search_textview");
-//		List<WebElement> productElements = productListContainer.findElements(By.className("android.widget.FrameLayout"));
-//for (WebElement productElement : productElements) {
-//		    if (productElement.getText().equals("fig")) {
-//		        // Click the "Add to Cart" button
-//		        productElement.findElement(By.className("android.widget.FrameLayout")).click();
-//		        break;
-//		    }
-		    m.findElementByIdAndClick("view_details_layout");
-		     m.findElementByIdAndClick("invoice_bill_button");
-		      m.findElementByIdAndClick("payment_bill_imageview");
-		      m.findElementByIdAndClick("send_sms_check");
-		      System.out.println("sms sent");
-		      m.findElementByIdAndClick("android:id/button1");
-		      System.out.println("add opther pro test case passed");
-}
+//	@Test()
+//	public void addsearchedproduct()
+//	{
+//		m.findElementByIdAndSendKeys("customer_search_edittext","verti");
+//		m.findElementByIdAndClick("search_customername_textview");
+//		m.findElementById("search_button");
+//	
+//	m.findElementByIdAndSendKeys("product_name_search_edittext","apple");
+//List<WebElement> element2 = (List<WebElement>) driver.findElementsByXPath("");
+//	System.out.println("element" +element2.size());
+//	element2.get(0).click();
+//		m.findElementByIdAndClick("barcode_search_textview");
+//		
+//		List<WebElement> textviews = driver.findElementsById("content");
+//		
+//				for (WebElement textView : textviews) {
+//					textviews.get(1).click();
+//				
+//	    System.out.println(textView.getText());
+//	    for (int i=0;i<= textviews.size();i++) {
+//            String actuallist = textviews.get(i).getText();
+//            System.out.println("product list " +actuallist);
+//            if(actuallist.equals(apple)) {
+//                driver.findElementById("content").click();
+//            } 
+	    
+	    
+				
+	    
+	    
+
+//		    m.findElementByIdAndClick("view_details_layout");
+//		     m.findElementByIdAndClick("invoice_bill_button");
+//		      m.findElementByIdAndClick("payment_bill_imageview");
+//		      m.findElementByIdAndClick("send_sms_check");
+//		      System.out.println("sms sent");
+//		      m.findElementByIdAndClick("android:id/button1");
+//		      System.out.println("add other pro test case passed");
+//}
 		    
 
 
 	
-//	@Test
+//	@Test(priority = 5)
 //	public void addOtherproduct() throws InterruptedException {
 //		m.findElementByIdAndSendKeys("customer_search_edittext","verti");
 //		m.findElementByIdAndClick("search_customername_textview");
@@ -182,76 +191,101 @@ public void Launchapp() throws Exception
 
 
 
-//	@Test
-//	public void Otherbill()
-//	{
-//		
-//
-//		
-//		  m.findElementByIdAndSendKeys("customer_search_edittext","shipra");
-//		  m.findElementByIdAndClick("search_customername_textview");
-//		
-//	      m.findElementByIdAndClick("quickadd_button");
-//	      
-//		WebElement el = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[4]/android.widget.ImageView");
-//	      el.click();
-//	         m. findElementByIdAndClick("button5");
-//	         m.findElementByIdAndClick("button5");
-//		  	 m.findElementByIdAndClick("buttonenter");
-//		  	 
-//  WebElement e2 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.ImageView");
-//             e2.click();  	 
-//		  	 m.findElementByIdAndClick("quickadd_product_imageview");
-//		  	 m.findElementByIdAndClick("button5");
-//		  	m.findElementByIdAndClick("buttonenter");
-//		  	m.findElementByXpathAndClick("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
-//		  	 
-//		  	WebElement e3 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.ImageView"); 
-//		  	e3.click(); 
-//		  	m.findElementByIdAndClick("quickadd_product_imageview");
-//            m. findElementByIdAndClick("button5");
-//            m.findElementByIdAndClick("buttonenter");
-//            m.findElementByXpathAndClick("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
-//
-//		  	WebElement e4 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[4]/android.widget.RelativeLayout/android.widget.ImageView"); 
-//		  	e4.click(); 
-//		  	m.findElementByIdAndClick("quickadd_product_imageview");
-//		  	m. findElementByIdAndClick("button3");
-//		  	 m.findElementByIdAndClick("buttonenter");
-//		  	  m.findElementByIdAndClick("view_textview");
-//		      m.findElementByIdAndClick("invoice_bill_button");
-//		      m.findElementByIdAndClick("payment_bill_imageview");
-//		      m.findElementByIdAndClick("send_sms_check");
-//		      System.out.println("sms sent");
-//		     m.findElementByIdAndClick("android:id/button1");
-//		      System.out.println("Other bills created");
-//			
-//	}
+	@Test(priority = 6)
+	public void Otherbill()
+	{
+		
+
+		
+		  m.findElementByIdAndSendKeys("customer_search_edittext","shipra");
+		  m.findElementByIdAndClick("search_customername_textview");
+		
+	      m.findElementByIdAndClick("quickadd_button");
+	      
+		WebElement el = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[4]/android.widget.ImageView");
+	      el.click();
+	         m. findElementByIdAndClick("button5");
+	         m.findElementByIdAndClick("button5");
+		  	 m.findElementByIdAndClick("buttonenter");
+		  	 
+  WebElement e2 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.ImageView");
+             e2.click();  	 
+		  	 m.findElementByIdAndClick("quickadd_product_imageview");
+		  	 m.findElementByIdAndClick("button5");
+		  	m.findElementByIdAndClick("buttonenter");
+		  	m.findElementByXpathAndClick("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+		  	 
+		  	WebElement e3 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.ImageView"); 
+		  	e3.click(); 
+		  	m.findElementByIdAndClick("quickadd_product_imageview");
+            m. findElementByIdAndClick("button5");
+            m.findElementByIdAndClick("buttonenter");
+            m.findElementByXpathAndClick("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+
+		  	WebElement e4 = (WebElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout[4]/android.widget.RelativeLayout/android.widget.ImageView"); 
+		  	e4.click(); 
+		  	m.findElementByIdAndClick("quickadd_product_imageview");
+		  	m. findElementByIdAndClick("button3");
+		  	 m.findElementByIdAndClick("buttonenter");
+		  	  m.findElementByIdAndClick("view_textview");
+		      m.findElementByIdAndClick("invoice_bill_button");
+		      m.findElementByIdAndClick("payment_bill_imageview");
+		      m.findElementByIdAndClick("send_sms_check");
+		      System.out.println("sms sent");
+		     m.findElementByIdAndClick("android:id/button1");
+		      System.out.println("Other bills created");
+			
+	}
+	@Test(priority = 7)
+	public void bestoffer() {
+	//	m.findElementsByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout[2]/android.widget.ListView");
+		m.findElementByIdAndClick("offers_button");
+		m.findElementByIdAndClick("product_imageview");
+		m.findElementByIdAndClick("bill_productquantity_textview");
+		m. findElementByIdAndClick("button3");
+		m.findElementByIdAndClick("buttonenter");
+		 m.findElementByIdAndClick("view_textview");
+		 m.findElementByIdAndClick("payment_bill_imageview");
+		 m.findElementByIdAndClick("android:id/button1");
+	      System.out.println("best offer product bill done");
+		
+		
+		  
+	}
 	
-	@Test
+	@Test(priority = 8)
 	public void syncbills() {
 		m.findElementByXpathAndClick("//android.widget.ImageView[@content-desc=\"More options\"]");
-	//	m.findElementByXpathAndClick("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[4]/android.widget.LinearLayout/android.widget.TextView");
-		m.scrollAndClick("Backup Summary");
+		m.findElementBynameAndClick("Backup Summary");
 		m.findElementByIdAndClick("refresh_dialog");
+		System.out.println("refresh button clicked");
 		m.wait(10,TimeUnit.SECONDS);
-	    m.findElementByClassNameAndClick("android.widget.Button");
-	    System.out.println("app refreshed");
+		m.findElementByIdAndClick("refresh_dialog");
+		
+		m.findElementByIdAndClick("close_dialog");
+		
+	    System.out.println("close");
 	    }
+
+	private void findElementByIdAndClick(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	
 	
 	
-	@Test
-	public void logout(){
-		m.findElementByXpathAndClick("//android.widget.ImageView[@content-desc=\"More options\"]");
-//		m.findElementByXpathAndClick("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[15]/android.widget.LinearLayout");
-		m.scrollAndClick("Logout");
+//	@Test(priority = 9)
+//	public void logout(){
+//		m.findElementByXpathAndClick("//android.widget.ImageView[@content-desc=\"More options\"]");
+//		m.findElementByXpathAndClick("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+//    	m.scrollAndClick("Logout");
+//		m.findElementsById("alert_message_textview");
 //		m.findElementByIdAndClick("positiveButton");
-        System.out.println("logout done");
-		m.findElementByIdAndClick("btnSubmit");
-		
-	}
+//		m.findElementByIdAndClick("btnSubmit");
+//		System.out.println("logout done");
+//		
+//	}
 }
     
 
