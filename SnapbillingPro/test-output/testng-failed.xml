@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Registration">
+      <class name="test.Features">
         <methods>
-          <include name="Launchapp"/>
-          <include name="syncbills"/>
-          <include name="Registerstore"/>
           <include name="Login"/>
-          <include name="addsearchedproduct"/>
-          <include name="logout"/>
+          <include name="Makebills"/>
         </methods>
-      </class> <!-- test.Registration -->
+      </class> <!-- test.Features -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

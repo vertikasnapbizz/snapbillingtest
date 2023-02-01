@@ -1,5 +1,6 @@
 package test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -75,12 +76,17 @@ public static void findElementByXpathAndSendKeys(String string, String string2) 
 
 public void findElementsByXPath(String string) {
 	driver.findElementByXPath(string);
-	// TODO Auto-generated method stub
+	// TODO Auto-generated method stu
 	
 }
+//public static void findlistofwebelementAndSendkeysAndClick(String string ,String string3) {
+//	List<WebElement> textviews =  driver.findElementsById("String"); 
+//	driver.equals(string3);
+//	
+//}
 
-//public void selectByvisibletext(String string) {
-//	driver.
+//public void productlist(String string){
+//	List<WebElement> textviews = driver.findElementsById(string);
 //}
 
 public void findElementsById(String string) {
@@ -88,6 +94,21 @@ public void findElementsById(String string) {
 	// TODO Auto-generated method stub
 	
 }
+public void findElementByname(String string) {
+	driver.findElementByName(string);
 }
+
+
+public void findElementBynameAndClick(String string) {
+	// TODO Auto-generated method stub
+	driver.findElementByName(string).click();
+}
+
+public void findElementBytextAndClick(String string) {
+	driver.findElementsByName(string);
+}
+
+}
+
 
 
