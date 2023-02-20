@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-01T11:58:25 IST" name="Default suite" finished-at="2023-02-01T11:58:26 IST" duration-ms="97">
+  <suite started-at="2023-02-20T12:37:26 IST" name="Default suite" finished-at="2023-02-20T12:43:13 IST" duration-ms="347339">
     <groups>
     </groups>
-    <test started-at="2023-02-01T11:58:25 IST" name="Default test" finished-at="2023-02-01T11:58:26 IST" duration-ms="97">
-      <class name="test.Features">
-        <test-method signature="Login()[pri:3, instance:test.Features@4e096385]" started-at="2023-02-01T11:58:25 IST" name="Login" finished-at="2023-02-01T11:58:26 IST" duration-ms="34" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2023-02-20T12:37:26 IST" name="Default test" finished-at="2023-02-20T12:43:13 IST" duration-ms="347339">
+      <class name="test.Registration">
+        <test-method signature="Launchapp()[pri:1, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:37:26 IST" name="Launchapp" finished-at="2023-02-20T12:38:32 IST" duration-ms="66295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launchapp -->
+        <test-method signature="Registerstore()[pri:2, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:38:32 IST" name="Registerstore" finished-at="2023-02-20T12:39:02 IST" duration-ms="30153" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementById(String)" because "test.MethodClass.driver" is null]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9L4327A', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=store_phone_no_edittext}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementById(String)" because "test.MethodClass.driver" is null
-at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:40)
-at test.Features.Login(Features.java:21)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9L4327A', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=store_phone_no_edittext}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:45)
+at test.Registration.Registerstore(Registration.java:81)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,19 +86,101 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registerstore -->
+        <test-method signature="Login()[pri:3, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:39:02 IST" name="Login" finished-at="2023-02-20T12:39:32 IST" duration-ms="30126" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9L4327A', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=etUserName_login}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9L4327A', ip: '192.168.1.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=etUserName_login}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:45)
+at test.Registration.Login(Registration.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Makebills()[pri:4, instance:test.Features@4e096385]" started-at="2023-02-01T11:58:26 IST" name="Makebills" finished-at="2023-02-01T11:58:26 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="Makebills()[pri:5, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:39:32 IST" name="Makebills" finished-at="2023-02-20T12:39:45 IST" duration-ms="12797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Makebills -->
+        <test-method signature="addsearchedproduct()[pri:6, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:39:45 IST" name="addsearchedproduct" finished-at="2023-02-20T12:40:22 IST" duration-ms="37394" status="FAIL">
+          <exception class="java.lang.ClassCastException">
             <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementById(String)" because "test.MethodClass.driver" is null]]>
+              <![CDATA[class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementById(String)" because "test.MethodClass.driver" is null
-at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:40)
-at test.Features.Makebills(Features.java:40)
+              <![CDATA[java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
+at test.Registration.addsearchedproduct(Registration.java:192)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,11 +211,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Makebills -->
-      </class> <!-- test.Features -->
+        </test-method> <!-- addsearchedproduct -->
+        <test-method signature="Otherbill()[pri:8, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:40:22 IST" name="Otherbill" finished-at="2023-02-20T12:40:44 IST" duration-ms="21233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Otherbill -->
+        <test-method signature="bestoffer()[pri:9, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:40:44 IST" name="bestoffer" finished-at="2023-02-20T12:40:52 IST" duration-ms="8213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bestoffer -->
+        <test-method signature="syncbills()[pri:10, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:40:52 IST" name="syncbills" finished-at="2023-02-20T12:42:01 IST" duration-ms="68802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncbills -->
+        <test-method signature="Savedb()[pri:11, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:42:01 IST" name="Savedb" finished-at="2023-02-20T12:42:29 IST" duration-ms="28194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Savedb -->
+        <test-method signature="logout()[pri:12, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:42:29 IST" name="logout" finished-at="2023-02-20T12:42:35 IST" duration-ms="5649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="Relogin()[pri:13, instance:test.Registration@247d8ae]" started-at="2023-02-20T12:42:35 IST" name="Relogin" finished-at="2023-02-20T12:43:13 IST" duration-ms="38391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Relogin -->
+      </class> <!-- test.Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

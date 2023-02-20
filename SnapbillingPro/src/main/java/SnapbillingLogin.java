@@ -29,5 +29,7 @@ public class SnapbillingLogin  {
 		
 		Registration r = new Registration();
 		r.Launchapp();
+//		r.Registerstore();
+		
 	}
 }

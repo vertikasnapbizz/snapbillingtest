@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Snapbizz\AppData\Local\Temp\testng-eclipse--929729875\testng-customsuite.xml</span>
+                    <span>C:\Users\Snapbizz\AppData\Local\Temp\testng-eclipse--1038248642\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,69 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Features" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Features" class="method navigator-link" hash-for-method="Makebills">Makebills</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Registerstore">Registerstore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="addsearchedproduct">addsearchedproduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Launchapp">Launchapp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Makebills">Makebills</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Otherbill">Otherbill</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Relogin">Relogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="Savedb">Savedb</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="bestoffer">bestoffer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.Registration" class="method navigator-link" hash-for-method="syncbills">syncbills</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,7 +181,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.Features</span>
+              <span class="class-name">test.Registration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -135,9 +189,38 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.findElementById(String)&quot; because &quot;test.MethodClass.driver&quot; is null
-	at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:40)
-	at test.Features.Login(Features.java:21)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9L4327A&apos;, ip: &apos;192.168.1.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=etUserName_login}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:45)
+	at test.Registration.Login(Registration.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,12 +255,80 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Makebills">
-                  </a> <!-- Makebills -->
-                  <span class="method-name">Makebills</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.findElementById(String)&quot; because &quot;test.MethodClass.driver&quot; is null
-	at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:40)
-	at test.Features.Makebills(Features.java:40)
+                  <a name="Registerstore">
+                  </a> <!-- Registerstore -->
+                  <span class="method-name">Registerstore</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9L4327A&apos;, ip: &apos;192.168.1.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, databaseEnabled: false, desired: {DeviceName: HUAWEI MediaPad T5, PlatformVersion: 8.0.0, Udid: VQTBB20821101069, appActivity: com.snapbizz.snapbilling.ac..., appPackage: com.snapbizz.snapbillingprox, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: AGS2-L09, deviceName: VQTBB20821101069, deviceScreenDensity: 251, deviceScreenSize: 1920x1200, deviceUDID: VQTBB20821101069, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.56875, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 38, takesScreenshot: true, viewportRect: {height: 1095, left: 0, top: 38, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: dbe8d135-eed1-4561-9da3-4cb967273e22
+*** Element info: {Using=id, value=store_phone_no_edittext}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at test.MethodClass.findElementByIdAndSendKeys(MethodClass.java:45)
+	at test.Registration.Registerstore(Registration.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addsearchedproduct">
+                  </a> <!-- addsearchedproduct -->
+                  <span class="method-name">addsearchedproduct</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader &apos;bootstrap&apos;; org.openqa.selenium.WebElement is in unnamed module of loader &apos;app&apos;)
+	at test.Registration.addsearchedproduct(Registration.java:192)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,10 +363,74 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Launchapp">
+                  </a> <!-- Launchapp -->
+                  <span class="method-name">Launchapp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Makebills">
+                  </a> <!-- Makebills -->
+                  <span class="method-name">Makebills</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Otherbill">
+                  </a> <!-- Otherbill -->
+                  <span class="method-name">Otherbill</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Relogin">
+                  </a> <!-- Relogin -->
+                  <span class="method-name">Relogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Savedb">
+                  </a> <!-- Savedb -->
+                  <span class="method-name">Savedb</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bestoffer">
+                  </a> <!-- bestoffer -->
+                  <span class="method-name">bestoffer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="syncbills">
+                  </a> <!-- syncbills -->
+                  <span class="method-name">syncbills</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Snapbizz\AppData\Local\Temp\testng-eclipse--929729875\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Snapbizz\AppData\Local\Temp\testng-eclipse--1038248642\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -224,7 +439,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.Features&quot;/&gt;
+      &lt;class name=&quot;test.Registration&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -264,20 +479,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'test.Features')
-data.setCell(0, 3, 34);
+data.setCell(0, 1, 'syncbills')
+data.setCell(0, 2, 'test.Registration')
+data.setCell(0, 3, 68802);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Makebills')
-data.setCell(1, 2, 'test.Features')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'Launchapp')
+data.setCell(1, 2, 'test.Registration')
+data.setCell(1, 3, 66295);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Relogin')
+data.setCell(2, 2, 'test.Registration')
+data.setCell(2, 3, 38391);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addsearchedproduct')
+data.setCell(3, 2, 'test.Registration')
+data.setCell(3, 3, 37394);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Registerstore')
+data.setCell(4, 2, 'test.Registration')
+data.setCell(4, 3, 30153);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Login')
+data.setCell(5, 2, 'test.Registration')
+data.setCell(5, 3, 30126);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Savedb')
+data.setCell(6, 2, 'test.Registration')
+data.setCell(6, 3, 28194);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Otherbill')
+data.setCell(7, 2, 'test.Registration')
+data.setCell(7, 3, 21233);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Makebills')
+data.setCell(8, 2, 'test.Registration')
+data.setCell(8, 3, 12797);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'bestoffer')
+data.setCell(9, 2, 'test.Registration')
+data.setCell(9, 3, 8213);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'logout')
+data.setCell(10, 2, 'test.Registration')
+data.setCell(10, 3, 5649);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 ms</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -303,18 +554,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.Features</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.Registration</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Login</span>
+                <span class="method-name">Launchapp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">Registerstore</span>
+                <span class="method-start">66303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login</span>
+                <span class="method-start">96466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">Makebills</span>
-                <span class="method-start">45 ms</span>
+                <span class="method-start">126595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addsearchedproduct</span>
+                <span class="method-start">139394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Otherbill</span>
+                <span class="method-start">176790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bestoffer</span>
+                <span class="method-start">198030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">syncbills</span>
+                <span class="method-start">206245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Savedb</span>
+                <span class="method-start">275050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">303247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Relogin</span>
+                <span class="method-start">308897 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
